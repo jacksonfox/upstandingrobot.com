@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>China on Links &amp; Notes</title>
+    <link>https://example.org/tags/china/</link>
+    <description>Recent content in China on Links &amp; Notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jan 2025 18:27:47 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/china/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek AI: Why This Chinese Model Matters</title>
+      <link>https://example.org/posts/deepseek-ai-analysis/</link>
+      <pubDate>Tue, 28 Jan 2025 18:27:47 -0600</pubDate>
+      <guid>https://example.org/posts/deepseek-ai-analysis/</guid>
+      <description>&lt;p&gt;Ben Thompson&amp;rsquo;s FAQ provides excellent context on why DeepSeek is significant - not just as another AI model, but for what it represents in terms of cost, accessibility, and geopolitical implications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;related-links&#34;&gt;Related Links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sherwood.news/tech/a-free-powerful-chinese-ai-model-just-dropped-but-dont-ask-it-about/&#34;&gt;DeepSeek&amp;rsquo;s content restrictions&lt;/a&gt; - Important limitations to understand&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://simonwillison.net/2024/Dec/26/deepseek-v3/&#34;&gt;Cost analysis and technical details&lt;/a&gt; - Simon Willison&amp;rsquo;s breakdown of training costs and performance&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

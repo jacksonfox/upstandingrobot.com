@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frameworks on Links &amp; Notes</title>
+    <link>https://example.org/tags/frameworks/</link>
+    <description>Recent content in Frameworks on Links &amp; Notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2024 16:00:52 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/frameworks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Use Cases: Gods, Interns, and Cogs</title>
+      <link>https://example.org/posts/ai-use-cases-gods-interns-cogs/</link>
+      <pubDate>Wed, 30 Oct 2024 16:00:52 -0600</pubDate>
+      <guid>https://example.org/posts/ai-use-cases-gods-interns-cogs/</guid>
+      <description>&lt;p&gt;Drew Breunig breaks down AI use cases into three clear categories that actually make sense:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Gods: Super-intelligent, artificial entities that do things autonomously.&lt;/li&gt;&#xA;&lt;li&gt;Interns: Supervised copilots that collaborate with experts, focusing on grunt work.&lt;/li&gt;&#xA;&lt;li&gt;Cogs: Functions optimized to perform a single task extremely well, usually as part of a pipeline or interface.&lt;/li&gt;&#xA;&lt;/ol&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This framework helps cut through the AI hype and focus on practical implementation patterns.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

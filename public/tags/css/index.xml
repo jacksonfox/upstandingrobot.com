@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Css on Links &amp; Notes</title>
+    <link>http://localhost:1313/tags/css/</link>
+    <description>Recent content in Css on Links &amp; Notes</description>
+    <generator>Hugo -- 0.149.0-DEV</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jul 2025 15:37:39 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Container Queries Are Game Changing</title>
+      <link>http://localhost:1313/posts/css-container-queries/</link>
+      <pubDate>Tue, 22 Jul 2025 15:37:39 -0600</pubDate>
+      <guid>http://localhost:1313/posts/css-container-queries/</guid>
+      <description>&lt;p&gt;Container queries allow elements to respond to the size of their container rather than the viewport. This is revolutionary for component-based design systems where components need to adapt based on their context, not just screen size.&lt;/p&gt;
+&lt;h2 id=&#34;related-links&#34;&gt;Related Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://caniuse.com/css-container-queries&#34;&gt;Can I Use: Container Queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GoogleChromeLabs/container-query-polyfill&#34;&gt;Container Query Polyfill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://codepen.io/collection/XQGRJo&#34;&gt;CSS Container Queries Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

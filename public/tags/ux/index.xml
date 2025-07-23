@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ux on Links &amp; Notes</title>
+    <link>http://localhost:1313/tags/ux/</link>
+    <description>Recent content in Ux on Links &amp; Notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2025 13:48:54 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2025/01/30/</link>
+      <pubDate>Thu, 30 Jan 2025 13:48:54 -0600</pubDate>
+      <guid>http://localhost:1313/2025/01/30/</guid>
+      <description>&lt;p&gt;I love a good nerdy &lt;a href=&#34;https://baymard.com/blog/drop-down-usability&#34;&gt;usability blog post&lt;/a&gt; (thx Baymard)&lt;/p&gt;&#xA;&lt;p&gt;tl;dr: Dropdowns kinda suck except in very limited and specific circumstances.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

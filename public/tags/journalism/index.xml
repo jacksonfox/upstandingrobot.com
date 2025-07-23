@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Journalism on Links &amp; Notes</title>
+    <link>http://localhost:1313/tags/journalism/</link>
+    <description>Recent content in Journalism on Links &amp; Notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2025 11:46:42 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/journalism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2025/01/30/</link>
+      <pubDate>Thu, 30 Jan 2025 11:46:42 -0600</pubDate>
+      <guid>http://localhost:1313/2025/01/30/</guid>
+      <description>&lt;p&gt;Reuters made &lt;a href=&#34;https://www.reuters.com/graphics/VIDEO-GAMES/MENTAL-HEALTH/akpeewkqgpr/&#34;&gt;a little game about Cozy Games&lt;/a&gt; (via &lt;a href=&#34;https://www.niemanlab.org/2025/01/reuters-made-a-cozy-game-about-cozy-games/&#34;&gt;NiemanLab&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;Related, I don&amp;rsquo;t think I would have survived 2020 nearly as well without the &lt;a href=&#34;https://goose.game/&#34;&gt;Untitled Goose Game&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
