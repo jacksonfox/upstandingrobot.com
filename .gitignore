@@ -1,0 +1,21 @@
+# Hugo binary
+hugo
+
+# Generated files
+public/
+resources/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
