@@ -1,7 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'Links & Notes'
-theme = 'terminal'
+title = 'Upstanding Robot'
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -9,26 +8,8 @@ buildFuture = false
 buildExpired = false
 
 [params]
-  contentTypeName = "posts"
-  themeColor = "blue"
-  showMenuItems = 3
-  fullWidthTheme = false
-  centerTheme = true
   description = "Curated technical and design links"
   author = "Your Name"
-  customCSS = ["css/custom.css"]
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags"
-    weight = 2
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"

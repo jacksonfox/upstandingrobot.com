@@ -1,5 +1,9 @@
 {{ define "main" }}
-{{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
+{{ if .Title }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+
+{{ range .Pages }}
 <article class="post">
     <div class="post-date">
         <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
@@ -23,12 +27,5 @@
     {{ end }}
     {{ end }}
 </article>
-{{ end }}
-
-{{ if .Paginator.HasPrev }}
-<a href="{{ .Paginator.Prev.URL }}">← newer</a>
-{{ end }}
-{{ if .Paginator.HasNext }}
-<a href="{{ .Paginator.Next.URL }}">older →</a>
 {{ end }}
 {{ end }}
