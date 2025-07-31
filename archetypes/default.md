@@ -1,9 +1,9 @@
-+++
-date = '{{ .Date }}'
-draft = false
-tags = [""]
-link = ""
-+++
+---
+date: '{{ .Date }}'
+draft: false
+tags: [""]
+link: ""
+---
 
 Brief commentary about the main link.
 
