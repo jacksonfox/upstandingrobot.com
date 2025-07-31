@@ -29,11 +29,12 @@ This is a personal links blog built with Hugo, featuring a custom minimal design
 ### Styling Choices
 - Blockquotes: Left blue border + light blue background, italic, smaller font
 - Centered layout (650px max width) with left-aligned text
-- Minimal navigation: just "home" and "tags"
+- Minimal navigation: "home", "about", "following", and "tags"
 - Clean, functional design - no visual clutter
 
 ## Common Tasks
 - New post: `./new-post.sh <URL> [title]` or `./hugo new content posts/filename.md`
+- Update following list: `./update-following.sh` (after placing OPML export as `following.opml`)
 - Build: `./hugo --quiet` 
 - Serve locally: `./hugo server` (uses localhost:1313)
 - Build for production: `./hugo --environment production`
