@@ -6,4 +6,4 @@ layout: single
 type: following
 ---
 
-Sites and feeds I read daily.
+Daily feed reading habit
