@@ -1,17 +1,6 @@
 {
   "categories": [
     {
-      "name": "Uncategorized",
-      "feeds": [
-        {
-          "title": "NetNewsWire",
-          "htmlUrl": "https://netnewswire.blog/",
-          "xmlUrl": "https://netnewswire.blog/feed.json",
-          "description": ""
-        }
-      ]
-    },
-    {
       "name": "Always",
       "feeds": [
         {
@@ -33,9 +22,15 @@
           "description": ""
         },
         {
-          "title": "Ed Zitron's Where's Your Ed At",
+          "title": "Ed Zitron",
           "htmlUrl": "https://www.wheresyoured.at/",
           "xmlUrl": "https://www.wheresyoured.at/rss/",
+          "description": ""
+        },
+        {
+          "title": "Jason Griffey",
+          "htmlUrl": "https://jasongriffey.net/",
+          "xmlUrl": "http://www.jasongriffey.net/wp/feed/atom/",
           "description": ""
         },
         {
@@ -51,27 +46,33 @@
           "description": ""
         },
         {
+          "title": "Khoi Vinh",
+          "htmlUrl": "https://www.subtraction.com/",
+          "xmlUrl": "http://feeds.feedburner.com/subtraction",
+          "description": ""
+        },
+        {
           "title": "kottke.org",
           "htmlUrl": "https://kottke.org/",
           "xmlUrl": "http://feeds.kottke.org/json",
           "description": ""
         },
         {
-          "title": "Pattern Recognition – Jason Griffey",
-          "htmlUrl": "https://jasongriffey.net/",
-          "xmlUrl": "http://www.jasongriffey.net/wp/feed/atom/",
-          "description": ""
-        },
-        {
-          "title": "Simon Willison's Weblog",
-          "htmlUrl": "http://simonwillison.net/",
-          "xmlUrl": "https://simonwillison.net/atom/everything/",
-          "description": ""
-        },
-        {
-          "title": "sippey.com",
+          "title": "Michael Sippey",
           "htmlUrl": "https://sippey.com/",
           "xmlUrl": "http://feeds.feedburner.com/sippey",
+          "description": ""
+        },
+        {
+          "title": "NetNewsWireNews",
+          "htmlUrl": "https://netnewswire.blog/",
+          "xmlUrl": "https://netnewswire.blog/feed.json",
+          "description": ""
+        },
+        {
+          "title": "Simon Willison",
+          "htmlUrl": "http://simonwillison.net/",
+          "xmlUrl": "https://simonwillison.net/atom/everything/",
           "description": ""
         },
         {
@@ -84,12 +85,6 @@
           "title": "Spyglass Spiral",
           "htmlUrl": "https://spiral.spyglass.org/",
           "xmlUrl": "https://dispatch.spyglass.org/feed",
-          "description": ""
-        },
-        {
-          "title": "Subtraction.com + Feed",
-          "htmlUrl": "https://www.subtraction.com/",
-          "xmlUrl": "http://feeds.feedburner.com/subtraction",
           "description": ""
         },
         {
