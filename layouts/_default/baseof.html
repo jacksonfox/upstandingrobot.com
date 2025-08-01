@@ -71,6 +71,11 @@
             margin-right: 20px;
         }
         
+        nav a.active {
+            font-weight: bold;
+            color: #333;
+        }
+        
         .site-header-image {
             text-align: left;
             margin-bottom: 20px;
@@ -153,10 +158,10 @@
             <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         </div>
         <nav>
-            <a href="/">home</a>
-            <a href="/about/">about</a>
-            <a href="/following/">following</a>
-            <a href="/tags/">tags</a>
+            <a href="/"{{ if .IsHome }} class="active"{{ end }}>home</a>
+            <a href="/about/"{{ if eq .Type "about" }} class="active"{{ end }}>about</a>
+            <a href="/following/"{{ if eq .Type "following" }} class="active"{{ end }}>following</a>
+            <a href="/tags/"{{ if eq .Section "tags" }} class="active"{{ end }}>tags</a>
         </nav>
     </header>
     
