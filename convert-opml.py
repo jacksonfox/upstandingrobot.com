@@ -14,7 +14,7 @@ def parse_opml(opml_file):
     tree = ET.parse(opml_file)
     root = tree.getroot()
     
-    categories = []
+    feeds = []
     
     # Find body element
     body = root.find('body')
@@ -22,7 +22,7 @@ def parse_opml(opml_file):
         print("Error: No body element found in OPML")
         return None
     
-    # Process each outline (category or feed)
+    # Process each outline (category or feed) and flatten everything
     for outline in body.findall('outline'):
         text = outline.get('text', '')
         title = outline.get('title', text)
@@ -31,8 +31,7 @@ def parse_opml(opml_file):
         children = outline.findall('outline')
         
         if children:
-            # This is a category
-            feeds = []
+            # This is a category - add all child feeds to the main list
             for child in children:
                 feed = {
                     'title': child.get('title', child.get('text', '')),
@@ -41,12 +40,6 @@ def parse_opml(opml_file):
                     'description': child.get('description', '')
                 }
                 feeds.append(feed)
-            
-            category = {
-                'name': title,
-                'feeds': feeds
-            }
-            categories.append(category)
         else:
             # This is a standalone feed (no category)
             feed = {
@@ -55,15 +48,12 @@ def parse_opml(opml_file):
                 'xmlUrl': outline.get('xmlUrl', ''),
                 'description': outline.get('description', '')
             }
-            
-            # Add to "Uncategorized" category
-            uncategorized = next((cat for cat in categories if cat['name'] == 'Uncategorized'), None)
-            if not uncategorized:
-                uncategorized = {'name': 'Uncategorized', 'feeds': []}
-                categories.append(uncategorized)
-            uncategorized['feeds'].append(feed)
+            feeds.append(feed)
     
-    return {'categories': categories}
+    # Sort feeds alphabetically by title
+    feeds.sort(key=lambda x: x['title'].lower())
+    
+    return {'feeds': feeds}
 
 def main():
     if len(sys.argv) != 3:
@@ -86,7 +76,7 @@ def main():
             json.dump(data, f, indent=2, ensure_ascii=False)
         
         print(f"Successfully converted {input_file} to {output_file}")
-        print(f"Found {len(data['categories'])} categories with {sum(len(cat['feeds']) for cat in data['categories'])} feeds total")
+        print(f"Found {len(data['feeds'])} feeds total")
         
     except ET.ParseError as e:
         print(f"Error parsing OPML file: {e}")
