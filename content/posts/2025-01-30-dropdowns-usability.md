@@ -1,5 +1,6 @@
 ---
-date: '2025-01-30T13:48:54-06:00'
+title: ""
+date: 2025-01-30T13:48:54-06:00
 draft: false
 tags: ["ux", "usability"]
 ---

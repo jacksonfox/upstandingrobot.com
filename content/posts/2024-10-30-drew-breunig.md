@@ -1,5 +1,6 @@
 ---
-date: '2024-10-30T16:00:52-06:00'
+title: ""
+date: 2024-10-30T16:00:52-06:00
 draft: false
 tags: ["ai", "strategy"]
 ---

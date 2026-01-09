@@ -1,5 +1,6 @@
 ---
-date: '2025-01-30T11:46:42-06:00'
+title: ""
+date: 2025-01-30T11:46:42-06:00
 draft: false
 tags: ["games", "journalism", "mental-health"]
 ---
