@@ -10,7 +10,12 @@
     </div>
     
     <div class="post-content">
-        {{ .Content }}
+        {{ if .Truncated }}
+            <div class="tldr">{{ .Summary }}</div>
+            <p class="read-more"><a href="{{ .Permalink }}">Read more →</a></p>
+        {{ else }}
+            {{ .Content }}
+        {{ end }}
     </div>
     
     {{ if .Params.tags }}

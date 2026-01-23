@@ -1,11 +1,17 @@
 {{ define "main" }}
-<article class="post">
+<article class="post single-post">
     <div class="post-date">
         {{ .Date.Format "2006-01-02" }}
     </div>
-    
+
     <div class="post-content">
-        {{ .Content }}
+        {{ if .Truncated }}
+            {{ $parts := split .RawContent "<!--more-->" }}
+            <div class="tldr">{{ index $parts 0 | markdownify }}</div>
+            {{ index $parts 1 | markdownify }}
+        {{ else }}
+            {{ .Content }}
+        {{ end }}
     </div>
     
     {{ if .Params.tags }}
