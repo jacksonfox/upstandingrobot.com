@@ -1,7 +1,7 @@
 ---
 title: Blogging with Claude Code
 date: 2026-01-21
-draft: true
+draft: false
 tags:
   - claude code
   - ai
