@@ -1,6 +1,9 @@
 ---
 title: ""
 date: 2024-10-30T16:00:52-06:00
+lastmod: 2026-01-09T15:54:15-07:00
+description: "Drew Breunig: After plenty of discussions and tons of exploration, I think we can simplify the world of AI use cases into three simple, distinct buckets: 1."
+image: /og-default.png
 draft: false
 tags: ["ai", "strategy"]
 ---

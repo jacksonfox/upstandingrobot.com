@@ -1,6 +1,9 @@
 ---
 title: ""
 date: 2025-07-28T23:01:09-06:00
+lastmod: 2026-01-09T15:54:15-07:00
+description: "Going to start collecting different AI design metaphors. Drew Breunig described Gods, Interns, and Cogs. Geoffrey Litt is thinking about Copilots and HUDs."
+image: /og-default.png
 draft: false
 tags: ["ai"]
 ---

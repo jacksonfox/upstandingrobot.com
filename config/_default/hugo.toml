@@ -11,6 +11,8 @@ buildExpired = false
 [params]
   description = "Curated technical and design links"
   author = "Your Name"
+  defaultImage = "/og-default.png"
+  twitter = ""
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"

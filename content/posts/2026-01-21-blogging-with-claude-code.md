@@ -1,6 +1,9 @@
 ---
 title: Blogging with Claude Code
 date: 2026-01-21
+lastmod: 2026-01-30T16:15:54-07:00
+description: "Last Spring I decided I wanted to restart this blog and realized I could use it as an opportunity to get more comfortable with the new generation of AI coding"
+image: /og-default.png
 draft: false
 tags:
   - claude code

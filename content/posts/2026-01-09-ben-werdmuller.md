@@ -1,6 +1,9 @@
 ---
 title: ""
 date: 2026-01-09T15:33:48-07:00
+lastmod: 2026-01-09T15:55:47-07:00
+description: "Catching up on some reading today and came across this: [Claude Code] has the potential to transform all of tech. I also think we’re going to see a real split"
+image: /og-default.png
 draft: false
 tags: ["ai"]
 ---
