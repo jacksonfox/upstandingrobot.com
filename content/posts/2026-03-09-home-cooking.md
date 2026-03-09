@@ -2,7 +2,7 @@
 title: Home cooking
 date: 2026-03-09
 lastmod: 2026-03-09
-draft: true
+draft: false
 tags:
   - code
   - ai
