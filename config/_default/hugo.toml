@@ -16,6 +16,7 @@ buildExpired = false
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
+  bookmarks = "/:year/:month/:day/:slug/"
 
 [taxonomies]
   tag = "tags"

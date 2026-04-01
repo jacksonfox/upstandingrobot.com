@@ -1,0 +1,40 @@
+<article class="post">
+    <div class="post-date">
+        <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
+    </div>
+
+    {{ if eq .Type "bookmarks" }}
+    <div class="post-content">
+        {{ if .Title }}<h2><a href="{{ .Params.link }}">{{ .Title }} &rarr;</a></h2>{{ end }}
+        {{ if .Truncated }}
+            <div class="tldr">{{ .Summary }}</div>
+            <p class="read-more"><a href="{{ .Permalink }}">Read more &rarr;</a></p>
+        {{ else }}
+            {{ .Content }}
+        {{ end }}
+    </div>
+    {{ else }}
+    <div class="post-content">
+        {{ if .Truncated }}
+            <div class="tldr">{{ .Summary }}</div>
+            <p class="read-more"><a href="{{ .Permalink }}">Read more &rarr;</a></p>
+        {{ else }}
+            {{ .Content }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.tags }}
+    {{ $hasRealTags := false }}
+    {{ range .Params.tags }}
+        {{ if ne . "" }}
+            {{ $hasRealTags = true }}
+        {{ end }}
+    {{ end }}
+    {{ if $hasRealTags }}
+    <div class="post-tags">
+        {{ range .Params.tags }}{{ if ne . "" }}#<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">{{ . }}</a> {{ end }}{{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+</article>

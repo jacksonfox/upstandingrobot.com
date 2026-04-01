@@ -1,33 +1,9 @@
 {{ define "main" }}
-{{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
-<article class="post">
-    <div class="post-date">
-        <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
-    </div>
-    
-    <div class="post-content">
-        {{ if .Truncated }}
-            <div class="tldr">{{ .Summary }}</div>
-            <p class="read-more"><a href="{{ .Permalink }}">Read more →</a></p>
-        {{ else }}
-            {{ .Content }}
-        {{ end }}
-    </div>
-    
-    {{ if .Params.tags }}
-    {{ $hasRealTags := false }}
-    {{ range .Params.tags }}
-        {{ if ne . "" }}
-            {{ $hasRealTags = true }}
-        {{ end }}
-    {{ end }}
-    {{ if $hasRealTags }}
-    <div class="post-tags">
-        {{ range .Params.tags }}{{ if ne . "" }}#<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">{{ . }}</a> {{ end }}{{ end }}
-    </div>
-    {{ end }}
-    {{ end }}
-</article>
+{{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ $bookmarks := where .Site.RegularPages "Type" "bookmarks" }}
+{{ $allContent := $posts | append $bookmarks }}
+{{ range (.Paginate (sort $allContent "Date" "desc")).Pages }}
+    {{ partial "post-card.html" . }}
 {{ end }}
 
 {{ if .Paginator.HasPrev }}
