@@ -1,13 +1,14 @@
 ---
-title: AI should help us product better code
+title: AI should help us produce better code
 date: 2026-03-11
-lastmod: 2026-03-11
+lastmod: 2026-03-31
 draft: false
 tags:
   - ai
   - code
+  - quotes
 ---
-[Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/better-code/#atom-everything):
+[Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/better-code/):
 
 > If adopting coding agents demonstrably reduces the quality of the code and features you are producing, you should address that problem directly: figure out which aspects of your process are hurting the quality of your output and fix them.
 > 
