@@ -16,7 +16,7 @@ FILENAME=$(date +"%Y-%m-%d-%H%M%S")
 POST_PATH="content/bookmarks/${FILENAME}.md"
 
 # Create post using Hugo archetype
-./hugo new "$POST_PATH" --quiet
+hugo new "$POST_PATH" --quiet
 
 echo "Created new bookmark: $POST_PATH"
 

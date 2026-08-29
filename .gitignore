@@ -16,6 +16,6 @@ CLAUDE.md
 
 # Temporary files
 *.tmp
-*.logfollowing.opml
-content/posts/2025-12-17-this-is-a-test.md
+*.log
+following.opml
 tmp/
