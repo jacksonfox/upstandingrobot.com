@@ -39,22 +39,23 @@
 {{- if $image }}
 <meta name="twitter:image" content="{{ $image }}">
 {{- end }}
-{{- with .Site.Params.twitter }}
-<meta name="twitter:site" content="@{{ . }}">
-{{- end }}
+
+{{/* Build the object, then emit it once. Writing the JSON out field by field
+     double-encodes every value: jsonify quotes the string, then Go's escaper
+     quotes it again inside <script>, so names arrive as "\"Jackson Fox\"" and
+     the dates stop parsing. safeJS marks the already-valid JSON as safe. */}}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" (cond .IsPage "BlogPosting" "Blog")
+  "headline" $title
+  "description" $desc
+  "url" .Permalink
+  "author" (dict "@type" "Person" "name" .Site.Params.author)
+  "datePublished" ($published | time.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" ($modified | time.Format "2006-01-02T15:04:05Z07:00")
+-}}
+{{- with $image }}{{ $ld = merge $ld (dict "image" .) }}{{ end -}}
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": {{ if .IsPage }}"BlogPosting"{{ else }}"Blog"{{ end }},
-  "headline": {{ $title | jsonify }},
-  "description": {{ $desc | jsonify }},
-  "url": {{ .Permalink | jsonify }},
-  {{- if $image }}
-  "image": {{ $image | jsonify }},
-  {{- end }}
-  "author": { "@type": "Person", "name": {{ .Site.Params.author | jsonify }} },
-  "datePublished": {{ $published | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ $modified | time.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
-}
+{{ $ld | jsonify | safeJS }}
 </script>
